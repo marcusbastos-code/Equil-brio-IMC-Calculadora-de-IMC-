@@ -30,3 +30,13 @@ frame_cima.grid(row=0, column=0, sticky=NSEW)
 frame_baixo = Frame(janela, width=590, height=360, bg=co0, pady=0, padx=0, relief="flat")
 #colocando o frame na janela
 frame_baixo.grid(row=1, column=0, sticky=NSEW)
+
+#----------configurando frame cima----------------
+
+#criando o nome do app
+app_nome = Label(frame_cima, text="Equilíbrio IMC", width=30, height=1, padx=0, relief="flat", anchor="center", font=("Ivy 24 bold "), bg=co0, fg=co1)
+app_nome.place(x=0, y=10)
+
+#criando uma linha abaixo do nome do app
+app_linha = Label(frame_cima, text="", width=800, height=1, padx=0, relief="flat", anchor="center", font=("Ivy 1 "), bg=co1, fg=co1)
+app_linha.place(x=0, y=70)

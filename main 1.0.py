@@ -40,3 +40,43 @@ app_nome.place(x=0, y=10)
 #criando uma linha abaixo do nome do app
 app_linha = Label(frame_cima, text="", width=800, height=1, padx=0, relief="flat", anchor="center", font=("Ivy 1 "), bg=co1, fg=co1)
 app_linha.place(x=0, y=70)
+
+
+
+#-----função calcular--------
+
+#função para calcular o IMC
+def calcular():
+
+    try:
+        #pegando os valores digitados pelo usuário
+        peso = float(e_peso.get().replace(",", "."))
+        altura = float(e_altura.get().replace(",", "."))
+
+        #calculando o IMC
+        imc = peso / altura**2
+
+        #mostrando o resultado do IMC na tela
+        resultado = imc
+        
+        #if para classificar a categoria do resultado do IMC
+        if resultado < 18.5:
+            l_resultado_texto["text"] = "O seu IMC: Abaixo do peso"
+            
+
+        elif resultado >= 18.5 and resultado < 25:
+            l_resultado_texto["text"] = "O seu IMC: Peso normal"
+            
+
+        elif resultado >= 25 and resultado < 30:
+            l_resultado_texto["text"] = "O seu IMC: Sobrepeso"
+            
+
+        else:
+            l_resultado_texto["text"] = "O seu IMC: Obesidade"
+            
+
+        l_resultado["text"] = "{:.{}f}".format(resultado, 2)
+    
+    except ValueError:
+        messagebox.showerror("Erro", "Por favor, insira valores numéricos válidos para peso e altura.")

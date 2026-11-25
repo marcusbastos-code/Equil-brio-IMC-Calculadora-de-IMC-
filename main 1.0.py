@@ -96,3 +96,11 @@ l_altura.grid(row=1, column=0, sticky=NSEW, pady=10, padx=3)
 #criando o entry para a altura
 e_altura = Entry(frame_baixo, width=8, relief="solid", font=("Ivy 16 bold "), justify="center")
 e_altura.grid(row=1, column=1, sticky=NSEW, pady=10, padx=3)
+
+#criando o label para o resultado
+l_resultado = Label(frame_baixo, text="---", width=5, height=1, padx=1, pady=12, relief="flat", anchor="center", font=("Ivy 28 bold "), bg=co2, fg=co1)
+l_resultado.place(x=430, y=15)
+
+#criando o label para o resultado do texto
+l_resultado_texto = Label(frame_baixo, text="", width=45, height=1, padx=0, pady=12, relief="flat", anchor="center", font=("Ivy 16 bold "), bg=co0, fg=co1)
+l_resultado_texto.place(x=0, y=110)

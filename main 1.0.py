@@ -80,3 +80,11 @@ def calcular():
     
     except ValueError:
         messagebox.showerror("Erro", "Por favor, insira valores numéricos válidos para peso e altura.")
+
+#criando o label para o peso
+l_peso = Label(frame_baixo, text="Digite seu peso(kg):", height=1, padx=0, relief="flat", anchor="center", font=("Ivy 16 bold "), bg=co0, fg=co1)
+l_peso.grid(row=0, column=0, sticky=NSEW, pady=10, padx=3)
+
+#criando o entry para o peso
+e_peso = Entry(frame_baixo, width=8, relief="solid", font=("Ivy 16 bold "), justify="center")
+e_peso.grid(row=0, column=1, sticky=NSEW, pady=10, padx=3)

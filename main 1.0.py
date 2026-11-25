@@ -104,3 +104,11 @@ l_resultado.place(x=430, y=15)
 #criando o label para o resultado do texto
 l_resultado_texto = Label(frame_baixo, text="", width=45, height=1, padx=0, pady=12, relief="flat", anchor="center", font=("Ivy 16 bold "), bg=co0, fg=co1)
 l_resultado_texto.place(x=0, y=110)
+
+#criando o botão para calcular
+b_calcular = Button(frame_baixo, command=calcular, text="Calcular", width=43, height=1, overrelief=SOLID, padx=0, pady=20, relief="raised", anchor="center", font=("Ivy 16 bold "), bg=co2, fg=co0)
+b_calcular.grid(row=4, column=0, columnspan=150, sticky=NSEW, pady=90, padx=10)
+
+
+#loop infinito da janela
+janela.mainloop()

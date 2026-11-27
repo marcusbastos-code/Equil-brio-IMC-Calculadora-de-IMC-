@@ -92,7 +92,8 @@ No Linux e no macOS, use `python3` no lugar de `python`.
 
 ## Captura de tela
 
-![alt text](image-1.png)
+<img width="735" height="607" alt="Captura de tela 2026-11-27 192506" src="https://github.com/user-attachments/assets/c9a8e98a-e480-4345-b1c2-f9921a27b918" />
+
 
 ## Tecnologias
 

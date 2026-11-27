@@ -81,6 +81,21 @@ def calcular():
     except ValueError:
         messagebox.showerror("Erro", "Por favor, insira valores numéricos válidos para peso e altura.")
 
+#--------função limpar--------
+
+#função para limpar os campos e o resultado
+def limpar():
+    #apaga o que foi digitado (do caractere 0 até o fim)
+    e_peso.delete(0, END)
+    e_altura.delete(0, END)
+
+    #volta o resultado ao estado inicial
+    l_resultado["text"] = "---"
+    l_resultado_texto["text"] = ""
+
+    #coloca o cursor de volta no campo do peso
+    e_peso.focus()
+
 #criando o label para o peso
 l_peso = Label(frame_baixo, text="Digite seu peso(kg):", height=1, padx=0, relief="flat", anchor="center", font=("Ivy 16 bold "), bg=co0, fg=co1)
 l_peso.grid(row=0, column=0, sticky=NSEW, pady=10, padx=3)
@@ -109,6 +124,9 @@ l_resultado_texto.place(x=0, y=110)
 b_calcular = Button(frame_baixo, command=calcular, text="Calcular", width=43, height=1, overrelief=SOLID, padx=0, pady=20, relief="raised", anchor="center", font=("Ivy 16 bold "), bg=co2, fg=co0)
 b_calcular.grid(row=4, column=0, columnspan=150, sticky=NSEW, pady=90, padx=10)
 
+#criando o botão para limpar
+b_limpar = Button(frame_baixo, command=limpar, text="Limpar", overrelief=SOLID, relief="raised", font=("Verdana 10 bold "), bg=co2, fg=co0)
+b_limpar.place(x=10, y=300, width=568, height=40)
 
 #loop infinito da janela
 janela.mainloop()

@@ -34,11 +34,11 @@ frame_baixo.grid(row=1, column=0, sticky=NSEW)
 #----------configurando frame cima----------------
 
 #criando o nome do app
-app_nome = Label(frame_cima, text="Equilíbrio IMC", width=30, height=1, padx=0, relief="flat", anchor="center", font=("Ivy 24 bold "), bg=co0, fg=co1)
+app_nome = Label(frame_cima, text="Equilíbrio IMC", width=30, height=1, padx=0, relief="flat", anchor="center", font=("Verdana 24 bold "), bg=co0, fg=co1)
 app_nome.place(x=0, y=10)
 
 #criando uma linha abaixo do nome do app
-app_linha = Label(frame_cima, text="", width=800, height=1, padx=0, relief="flat", anchor="center", font=("Ivy 1 "), bg=co1, fg=co1)
+app_linha = Label(frame_cima, text="", width=800, height=1, padx=0, relief="flat", anchor="center", font=("Verdana 1 "), bg=co1, fg=co1)
 app_linha.place(x=0, y=70)
 
 
@@ -97,7 +97,7 @@ def limpar():
     e_peso.focus()
 
 #criando o label para o peso
-l_peso = Label(frame_baixo, text="Digite seu peso(kg):", height=1, padx=0, relief="flat", anchor="center", font=("Ivy 16 bold "), bg=co0, fg=co1)
+l_peso = Label(frame_baixo, text="Digite seu peso(kg):", height=1, padx=0, relief="flat", anchor="center", font=("Verdana 16 bold "), bg=co0, fg=co1)
 l_peso.grid(row=0, column=0, sticky=NSEW, pady=10, padx=3)
 
 #criando o entry para o peso
@@ -105,23 +105,23 @@ e_peso = Entry(frame_baixo, width=8, relief="solid", font=("Ivy 16 bold "), just
 e_peso.grid(row=0, column=1, sticky=NSEW, pady=10, padx=3)
 
 #criando o label para a altura
-l_altura = Label(frame_baixo, text="Digite sua altura(m):", height=1, padx=0, relief="flat", anchor="center", font=("Ivy 16 bold "), bg=co0, fg=co1)
+l_altura = Label(frame_baixo, text="Digite sua altura(m):", height=1, padx=0, relief="flat", anchor="center", font=("Verdana 16 bold "), bg=co0, fg=co1)
 l_altura.grid(row=1, column=0, sticky=NSEW, pady=10, padx=3)
 
 #criando o entry para a altura
-e_altura = Entry(frame_baixo, width=8, relief="solid", font=("Ivy 16 bold "), justify="center")
+e_altura = Entry(frame_baixo, width=8, relief="solid", font=("Verdana 16 bold "), justify="center")
 e_altura.grid(row=1, column=1, sticky=NSEW, pady=10, padx=3)
 
 #criando o label para o resultado
-l_resultado = Label(frame_baixo, text="---", width=5, height=1, padx=1, pady=12, relief="flat", anchor="center", font=("Ivy 28 bold "), bg=co2, fg=co1)
+l_resultado = Label(frame_baixo, text="---", width=5, height=1, padx=1, pady=12, relief="flat", anchor="center", font=("Verdana 28 bold "), bg=co2, fg=co1)
 l_resultado.place(x=430, y=15)
 
 #criando o label para o resultado do texto
-l_resultado_texto = Label(frame_baixo, text="", width=45, height=1, padx=0, pady=12, relief="flat", anchor="center", font=("Ivy 16 bold "), bg=co0, fg=co1)
+l_resultado_texto = Label(frame_baixo, text="", width=45, height=1, padx=0, pady=12, relief="flat", anchor="center", font=("Verdana 16 bold "), bg=co0, fg=co1)
 l_resultado_texto.place(x=0, y=110)
 
 #criando o botão para calcular
-b_calcular = Button(frame_baixo, command=calcular, text="Calcular", width=43, height=1, overrelief=SOLID, padx=0, pady=20, relief="raised", anchor="center", font=("Ivy 16 bold "), bg=co2, fg=co0)
+b_calcular = Button(frame_baixo, command=calcular, text="Calcular", width=43, height=1, overrelief=SOLID, padx=0, pady=20, relief="raised", anchor="center", font=("Verdana 16 bold "), bg=co2, fg=co0)
 b_calcular.grid(row=4, column=0, columnspan=150, sticky=NSEW, pady=90, padx=10)
 
 #criando o botão para limpar
